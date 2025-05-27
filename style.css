@@ -1,64 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
-
 body {
-  font-family: 'Ubuntu', sans-serif;
   margin: 0;
-  background: #1e0f0f;
-  color: #f5e9dc;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #2b1d1d, #1a0e0e);
+  color: #f0e6d2;
 }
 
 header {
-  background: #421414;
   text-align: center;
-  padding: 1.5rem;
-  border-bottom: 4px solid #ffae00;
+  padding: 2rem 1rem;
+  background-color: #3e1f1f;
+  color: #fddf9d;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
 }
 
 header h1 {
-  color: #ffae00;
-  margin: 0;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 header p {
-  color: #f0c48c;
+  font-size: 1.2rem;
+  opacity: 0.9;
 }
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.2rem;
-  padding: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .art {
-  background: #2a1515;
-  padding: 0.8rem;
+  background-color: #442c2c;
+  padding: 1rem;
   border-radius: 10px;
-  box-shadow: 0 0 10px #3a1e1e;
-  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.art:hover {
+  transform: scale(1.03);
 }
 
 .art img {
   max-width: 100%;
   border-radius: 8px;
-  border: 2px solid #ffae00;
+  height: auto;
 }
 
 .art p {
   margin-top: 0.5rem;
+  text-align: center;
   font-weight: bold;
-  color: #ffae00;
+  color: #fddf9d;
 }
 
 footer {
   text-align: center;
-  padding: 1rem;
-  background: #421414;
-  border-top: 2px solid #ffae00;
+  padding: 2rem 1rem;
+  background-color: #3e1f1f;
+  font-size: 1rem;
+  color: #e6d4c1;
 }
 
-a {
-  color: #f0c48c;
-  text-decoration: none;
-  font-weight: bold;
-}
+footer a {
+  color: #fddf9d;
+  text-decoration: underline;
+  }
